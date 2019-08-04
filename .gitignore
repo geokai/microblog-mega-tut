@@ -26,6 +26,10 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+tox*
+*ini
+.flake8
+*cfg
 
 # Translations
 *.mo
