@@ -3,7 +3,7 @@ from flask_login import login_user, logout_user, current_user, login_required
 from werkzeug.urls import url_parse
 from app import app, db
 from app.forms import LoginForm, RegistrationForm
-from app.models import User
+from app.models import User, Post
 
 
 @app.route('/')
@@ -11,20 +11,7 @@ from app.models import User
 @login_required
 def index():
     """Logic for the /index.html page."""
-    posts = [
-        {
-            'author': {'username': 'John'},
-            'body': 'Beautiful day in Portland'
-        },
-        {
-            'author': {'username': 'Meghan'},
-            'body': 'The Avengers movie was so cool!'
-        },
-        {
-            'author': {'username': 'Robert'},
-            'body': 'The auto-complete is blocking!'
-        }
-    ]
+    posts = Post.query.all()
     return render_template('index.html', title='Home', posts=posts)
 
 
