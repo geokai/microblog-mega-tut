@@ -1,4 +1,4 @@
 pip-tools
 ipython
 flake8
-pytest
+flask-shell-ipython
