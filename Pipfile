@@ -4,17 +4,19 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pip-tools = "*"
+ipython = "*"
+flake8 = "*"
+flask-shell-ipython = "*"
+pytest = "*"
+pytest-cov = "*"
 
 [packages]
-click = "==7.0"
-itsdangerous = "==1.1.0"
-Flask-Login = "==0.4.1"
-Flask-WTF = "==0.14.2"
-Flask = "==1.1.1"
-Jinja2 = "==2.10.1"
-MarkupSafe = "==1.1.1"
-Werkzeug = "==0.15.5"
-WTForms = "==2.2.1"
+Flask = "*"
+Flask-WTF = "*"
+Flask-Login = "*"
+Flask-SQLAlchemy = "*"
+Flask-Migrate = "*"
 
 [requires]
 python_version = "3.7"
