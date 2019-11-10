@@ -42,3 +42,4 @@ tox*
 venv
 app.db
 microblog.log*
+.env
