@@ -2,3 +2,5 @@ pip-tools
 ipython
 flake8
 flask-shell-ipython
+pytest
+pytest-cov
